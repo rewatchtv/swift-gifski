@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Builds gifski from source using the provided xcodeproj
+# Fixes the dylib, then signs and creates the XCFramework
+# and finally zips it up
 set -e
 
 OUTPUT_PATH=Gifski.xcframework
@@ -7,6 +10,10 @@ BUILD_DIR=build
 
 rm -rf $BUILD_DIR
 rm -rf $OUTPUT_PATH
+
+# Update to latest header
+echo "Updating C headers..."
+cp gifski/gifski.h include
 
 # Build gifski.dylib
 echo "Building gifsky.dylib..."
