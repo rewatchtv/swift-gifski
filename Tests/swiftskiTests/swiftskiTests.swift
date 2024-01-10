@@ -1,7 +1,7 @@
 import XCTest
-@testable import swiftski
+@testable import Swiftski
 
-final class swiftskiTests: XCTestCase {
+final class SwiftskiTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

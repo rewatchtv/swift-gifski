@@ -3,14 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "swiftski",
+    name: "Swiftski",
+    platforms: [
+        .macOS(.v12)
+    ],
     products: [
-        .library(name: "swiftski", targets: ["swiftski"]),
-        .library(name: "gifski", targets: ["gifski"]),
+        .library(name: "Swiftski", targets: ["Swiftski"]),
+        .library(name: "Gifski", targets: ["Gifski"]),
     ],
     targets: [
-        .target(name: "swiftski", dependencies: ["Gifski"]),
-        .testTarget(name: "swiftskiTests", dependencies: ["swiftski"]),
-        .binaryTarget(name: "Gifski", path: "Gifski.xcframework")
+        .target(name: "Swiftski", dependencies: ["Gifski"]),
+        .testTarget(name: "SwiftskiTests", dependencies: ["Swiftski"]),
+        .binaryTarget(name: "Gifski", path: "gifski/Gifski.xcframework.zip")
     ]
 )
