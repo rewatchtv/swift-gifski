@@ -8,5 +8,7 @@ Gifski is written in Rust and provides a C api and xcodeproj for building. I'm n
 3. Commit the updated framework and .zip
 4. Tag the release with the same version number as upstream gifski.
 
-If there's a better way to do any of this, let me know.
+If there's a better way to do any of this, let me know. I haven't found a lot of documentation about this use case
 
+## License
+All code in this repo is provided under the MIT license. However, please note that [gifski is provided under a different license](https://github.com/ImageOptim/gifski?tab=readme-ov-file#license) (currently AGPL 3 or later) with options for commercial licenses. It's your responsibility to ensure you're compliant with that license if you're using this package and therefore that library.
