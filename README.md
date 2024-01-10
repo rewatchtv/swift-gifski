@@ -1,4 +1,4 @@
-Swift package wrapper around the [gifski](https://github.com/ImageOptim/gifski) library for making GIFs. This currently directly exposes the gifski C api, but ideally we'll wrap that in a nice Swift interface and hide the underlying C api completely.
+Swift package wrapper around the [gifski](https://github.com/ImageOptim/gifski) library for making GIFs. This package directly exposes the gifski C api and is just a convenience to not needing to build it yourself. In the future I'm planning on a second package that wraps this one and exposes and better Swift interface.
 
 ## Building/Updating
 Gifski is written in Rust and provides a C api and xcodeproj for building. I'm not sure if there is a way to have SPM build it from source, so for now this builds and distributes a compiled binary target as an XCFramework. First, ensure you have the latest version of Rust installed following instructions [here](https://github.com/ImageOptim/gifski?tab=readme-ov-file#building).
