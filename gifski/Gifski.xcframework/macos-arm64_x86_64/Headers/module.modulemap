@@ -1,0 +1,4 @@
+module Gifski {
+     umbrella header "gifski.h"
+     export *
+ }
